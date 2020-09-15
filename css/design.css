@@ -1,0 +1,109 @@
+body{
+	background-color: #080808;
+	color: white;
+}
+
+#top{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60vh;
+}
+
+h1{
+	font-family: rig-shaded-bold-extrude, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+	font-size: 150px;
+	letter-spacing: 20px;
+
+}
+
+#photo-text{
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+	font-family: paralucent, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 20px;
+}
+
+#collage{
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+#collage1{
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+}
+
+#collage2a{
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+}
+
+#collage2ab{
+  width: 30%;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.mid{
+  margin-left: 8%;
+}
+
+#collage3{
+  width: 35%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+ @media screen and (max-width: 788px){
+
+ h1{
+ 	font-size: 100px;
+ 	letter-spacing: 10px;
+ }
+
+
+
+ #collage1{
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+}
+
+#collage2a{
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+#collage2ab{
+  width: 80%;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.mid{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#collage3{
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+ }

@@ -1,0 +1,108 @@
+body{
+	background-color: #080808;
+}
+
+#JobExperience{
+	padding-top: 40px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+}
+
+h1{
+	color: white;
+  font-family: schnebel-sans-pro-expanded, sans-serif;
+  font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 30px;
+}
+
+h3{
+	color: white;
+  font-family: schnebel-sans-pro-expanded, sans-serif;
+  font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 60px;
+}
+
+
+
+h4{
+	color: white;
+  font-family: schnebel-sans-pro-expanded, sans-serif;
+  font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    padding-top: 80px;
+}
+
+p{
+	color: white;
+  font-family: paralucent, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+#PDF{
+	color: white;
+  font-family: paralucent, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+#PDF a{
+	color: white;
+	border: solid 2px white;
+	text-decoration: none;
+	padding: 20px;
+
+}
+
+#PDF a:hover{
+	color: black;
+	background-color: white;
+	font-weight: bolder;
+}
+
+
+
+
+
+#pair{
+	
+	
+	width: 80%;
+	margin: 0 auto;
+	border-bottom: 1px solid white;
+	padding-bottom: 10px;
+
+
+}
+
+@media (max-width: 905px){
+
+	
+		
+
+	}
+
+#PDF{
+	margin-bottom: 50px;
+}
+
+
+
+}

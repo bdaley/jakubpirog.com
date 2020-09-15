@@ -1,0 +1,43 @@
+#whole{
+	width: 100vw;
+	background-image: url(../img/me2.jpg);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+	background-size: auto;
+	background-position: center;
+}
+
+
+
+nav{
+	background-color: #080808;
+}
+
+.navbar-brand{
+	font-size: 30px;
+}
+
+.navbar-brand:hover{
+	text-decoration: underline;
+}
+
+#whole h1{
+	font-family: schnebel-sans-pro-expanded, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  color: white;
+  padding: 15px;
+}
+
+#whole h3{
+	font-family: paralucent, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+  padding-bottom: 10px;
+}
