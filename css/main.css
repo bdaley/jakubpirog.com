@@ -11,7 +11,9 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
@@ -42,17 +44,7 @@ body {
   
 }
 
-.dark{
-  background-image: url(../img/hockey.svg);
-  -webkit-transition: all 1s ease-out;
-   -moz-transition: all 1s ease-out;
-   -o-transition: all 1s ease-out;
-   -ms-transition: all 1s ease-out;
-   transition: all 1s ease-out;
-   color: white;
-   display: all;
 
-}
 
 
 .zero h1{
@@ -95,39 +87,34 @@ body {
   background-image: url(../img/flag.JPG);
   background-size: cover;
   background-position: center;
-  -webkit-transition: all 1s ease-out;
-   -moz-transition: all 1s ease-out;
-   -o-transition: all 1s ease-out;
-   -ms-transition: all 1s ease-out;
-   transition: all 1s ease-out;
+  transition: .75s ease;
+
+
+ 
+  
+  
+
 }
 
 #second-pic:hover{
-  background-image: url(../img/me.jpg);
+  background-image: url(../img/LinkedIn-Blue.png);
+  transition: .75s ease;
   background-size: cover;
-  -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
+  
 }
+
+
 
 #second-pic:hover ~ .zero{
-  background-image: url(../img/me.jpg);
+
+  background-image: url(../img/flag.JPG);
+  background-size: 100% 100%;
+  transition: .75s ease;
 }
 
 
 
-#second-pic h2{
-  color: white;
-  padding: 20px;
-  padding-left: 35px;
-  font-family: schnebel-sans-pro-expanded, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 25px;
-  text-shadow: 1px 1px black;
-}
+
 
 .two {
   background-image: url(../img/storm.JPG);
@@ -249,7 +236,7 @@ nav ul li a:hover{
   font-family: schnebel-sans-pro-expanded, sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 25px;
+  font-size: 35px;
   color: white;
   padding-left: 40px;
   padding-top: 10px;
