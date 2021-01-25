@@ -50,29 +50,51 @@
 
 <body>
 
-  <nav id="same-nav">
-  <a class="navbar-brand" href="https://jakubpirog.com/">Home</a>
-  <div id="navbarNav1">
-    <ul class="navbar-nav1">
-      <li class="nav-item1">
-        <a class="nav-link1" href="https://jakubpirog.com/resume">Resume</a>
-      </li>
-      <li class="nav-item1">
-        <a class="nav-link1" href="https://jakubpirog.com/videography">Video</a>
-      </li>
-      <li class="nav-item1">
-        <a class="nav-link1" href="https://jakubpirog.com/photography">Photo</a>
-      </li>
-      <li class="nav-item1">
-        <a class="nav-link1" href="https://jakubpirog.com/design">Design</a>
-      </li>
-      <li class="nav-item1">
-        <a class="nav-link1" href="https://jakubpirog.com/mystory">My Story</a>
-      </li>
-      
-    </ul>
+  <!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+
+    <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="https://jakubpirog.com/videography">Videography</a>
+    <a href="https://jakubpirog.com/photography">Photography</a>
+    <a href="https://jakubpirog.com/design">Design</a>
+    <a href="https://jakubpirog.com/mystory">My Story</a>
+    <a href="https://jakubpirog.com/resume">Resume</a>
+    <a href="https://jakubpirog.com/contact">Contact</a>
+
+    <div id="icons">
+        <a class="icons" href="https://www.instagram.com/jakub.pirog/?hl=en"><img src="img/iconfinder-icon (1).svg" alt="instagram"></a>
+        <a class="icons" href="https://www.youtube.com/channel/UCRUc_PR0jnFOSxTT_dhFvuA"><img src="img/iconfinder-icon (3).svg" alt="youtube"></a>
+        <a class="icons" href="https://www.linkedin.com/in/jakub-pirog-5b93a9171/"><img src="img/iconfinder-icon (2).svg" alt="linkedin"></a>
+    </div>
+
   </div>
-</nav>
+
+  
+
+          
+
+  
+
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+
+<div class= "sticky">
+
+<span onclick="openNav()">
+
+<div class="menu1"></div>
+<div class="menu1"></div>
+<div class="menu1"></div>
+
+</span>
+
+</div>
 
 <div id="whole">
 
@@ -106,6 +128,18 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+  <script>
+    /* Open */
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+/* Close */
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+  </script>
 </body>
 
 </html>

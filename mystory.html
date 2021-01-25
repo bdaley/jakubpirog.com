@@ -46,53 +46,59 @@
 
 </head>
 
+<!-- The overlay -->
+<div id="myNav" class="overlay">
 
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="https://jakubpirog.com/videography">Videography</a>
+    <a href="https://jakubpirog.com/photography">Photography</a>
+    <a href="https://jakubpirog.com/design">Design</a>
+    <a href="https://jakubpirog.com/mystory">My Story</a>
+    <a href="https://jakubpirog.com/resume">Resume</a>
+    <a href="https://jakubpirog.com/contact">Contact</a>
+
+    <div id="icons">
+        <a class="icons" href="https://www.instagram.com/jakub.pirog/?hl=en"><img src="img/iconfinder-icon (1).svg" alt="instagram"></a>
+        <a class="icons" href="https://www.youtube.com/channel/UCRUc_PR0jnFOSxTT_dhFvuA"><img src="img/iconfinder-icon (3).svg" alt="youtube"></a>
+        <a class="icons" href="https://www.linkedin.com/in/jakub-pirog-5b93a9171/"><img src="img/iconfinder-icon (2).svg" alt="linkedin"></a>
+    </div>
+
+  </div>
+
+  
+
+          
+
+  
+
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+
+<div class= "sticky">
+
+<span onclick="openNav()">
+
+<div class="menu1"></div>
+<div class="menu1"></div>
+<div class="menu1"></div>
+
+</span>
+
+</div>
 
 <body>
 
-  <nav id="same-nav">
-  <a class="navbar-brand" href="https://jakubpirog.com/">Home</a>
-  <div id="navbarNav1">
-    <ul class="navbar-nav1">
-      <li class="nav-item1">
-        <a class="nav-link1" href="https://jakubpirog.com/resume">Resume</a>
-      </li>
-      <li class="nav-item1">
-        <a class="nav-link1" href="https://jakubpirog.com/videography">Video</a>
-      </li>
-      <li class="nav-item1">
-        <a class="nav-link1" href="https://jakubpirog.com/photography">Photo</a>
-      </li>
-      <li class="nav-item1">
-        <a class="nav-link1" href="https://jakubpirog.com/design">Design</a>
-      </li>
-     
-      
-    </ul>
+
+
+<div class="split">
+  <div id="right">
+  
   </div>
-</nav>
-
-<div id="whole">
-
-
-
-<h1>My Story</h1>
-<div id="arrow"><a href="#anchor"><img src="img/down.png"></a></div>
-
-</div>
-
-<!--
-
-<div id="middle">
-
-<div id="words">
-<h1>Hi, my name is Jakub Pirog.</h1>
-
-</div>
-
-</div>
-
--->
 
 <div class="split left">
   <div class="centered">
@@ -102,7 +108,7 @@
 <p>My name is Jakub Pirog.</p>
 
     <p>I am a first generation Polish-American citizen whose parents immigrated to the U.S. from Poland in the early '90s. From a young age, they taught me the values of patience and hard work which have been instrumental in the making of my professional career.</p>
-<p>My ambitions of becoming a photographer have taken me across the globe, given me the privilege of working with some truly unforgettable people, and have opened my eyes to a world of amazing opportunities. I am tremendously thankful for everything I have been able to experience so far. On the right side of the screen, you can see some of my favorite photos that I have captured along my journey.</p>
+    <p>My ambitions of becoming a DP, Designer, and Photographer have taken me across the globe, given me the privilege of working with some truly unforgettable people, and have opened my eyes to a world of amazing opportunities. I am tremendously thankful for everything I have been able to experience so far.</p>
 
 <p>
 Currently, I make graphics and run outreach for SUBOG (@subogatuconn), 
@@ -118,18 +124,7 @@ and am also leading a team of students to produce a video for a startup company 
   </div>
 </div>
 
-<div class="split">
-  <div class="right">
- 
-  <div style="background-image:url(mystory/1.jpg)"></div>
-  <div style="background-image:url(mystory/2.jpg)"></div>
-  <div style="background-image:url(mystory/3.jpg)"></div>
-  <div style="background-image:url(mystory/4.jpg)"></div>
-  <div style="background-image:url(mystory/5.jpg)"></div>
-  <div style="background-image:url(mystory/6.jpeg)"></div>
-  
 
-  </div>
 </div>
 
 
@@ -139,7 +134,17 @@ and am also leading a team of students to produce a video for a startup company 
 
   <!-- Add your site or application content here -->
   
+  <script>
+    /* Open */
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
 
+/* Close */
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+  </script>
 
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

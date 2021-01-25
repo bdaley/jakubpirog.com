@@ -21,24 +21,9 @@ body{
 	color: white;
 }
 
-#top{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	width: 100vw;
-  background-image: url(../img/Screen-Grab-20.jpg);
-	
-}
 
-.overlay-desc {
-  background: rgba(0,0,0,0);
-  position: absolute;
-  top: 100px; right: 0; bottom: 0; left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
+
 
 video{
 	position: center;
@@ -50,8 +35,10 @@ h1{
 	font-family: schnebel-sans-pro-expanded, sans-serif;
   font-weight: 700;
     font-style: normal;
-    font-size: 100px;
+    font-size: 120px;
     text-shadow: 3px 3px black;
+    text-align: center;
+    margin-top: 200px;
 }
 
 #Study{
@@ -97,6 +84,12 @@ h1{
 
 }
 
+#reel{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
 #collage2{
 	display: flex;
 	justify-content: center;
@@ -122,57 +115,119 @@ h1{
 	width: 45%;
 }
 
-.navbar-brand{
-  font-family: schnebel-sans-pro-expanded, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 25px;
+
+span {
+
   color: white;
-  padding-left: 40px;
-  padding-top: 10px;
-
-
-}
-
-.navbar-brand:hover{
-  color: white;
-  text-decoration: underline;
-}
-
-#same-nav{
+  top: 0;
+  left: 70px;
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  padding-top: 20px;
+  flex-direction: column;
+  position: fixed;
+  margin-top: 7vw;
+  height: 100px;
+  z-index: 5;
+
 }
 
-.navbar-nav1{
+
+
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+
+}
+
+.overlay-content {
+  position: relative;
+  width: 100%;
+  text-align: center;
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+ 
+
+
 }
 
-.nav-link1{
-  padding-right: 40px;
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
 }
 
-@media (max-width: 620px){
-  .navbar-brand{
-    font-size: 20px;
-    padding-top: 15px;
-  }
-  
-  .nav-link1{
-    font-size: 20px;
-    font-family: paralucent, sans-serif;
-  font-weight: 200;
+.overlay-content a{
+  font-family: paralucent, sans-serif;
+  font-weight: 400;
   font-style: normal;
   letter-spacing: 2px;
-  padding-right: 30px;
+  font-size: 25px;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  z-index: 5;
+}
+
+#icons{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.icons{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  bottom: 0;
+
+}
+
+.icons img{
+  height: 45px;
+  width: 45px;
+  margin-left: 15px;
+}
+
+.icons img:hover{
+
+  transform: scale(1.1);
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
   }
 
 
 
-}
+
 
 
 

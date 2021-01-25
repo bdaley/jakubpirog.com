@@ -8,16 +8,17 @@ body{
 	justify-content: center;
 	align-items: center;
 	height: 60vh;
+  margin-top: 10%;
+  margin-bottom: 0;
 }
 
 h1{
 	font-family: rig-shaded-bold-extrude, sans-serif;
-
-font-weight: 700;
-
-font-style: normal;
+  font-weight: 700;
+  font-style: normal;
 	font-size: 150px;
 	letter-spacing: 20px;
+  margin-bottom: 0;
 
 }
 

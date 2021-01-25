@@ -128,16 +128,17 @@ h1{
   	font-weight: 700;
     font-style: normal;
     font-size: 50px;
+
 }
 
 #up{
-	height: 14vh;
+	height: 30%;
 	width: 100vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: #080808;
-	padding-top: 30px;
+	padding-top: 15%;
 }
 
 

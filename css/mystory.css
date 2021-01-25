@@ -2,106 +2,19 @@ html{
 	scroll-behavior: smooth;
 }
 
-#whole{
-	width: 100vw;
-	background-image: url(../img/mystory.JPG);
-	background-size: cover;
-	background-repeat: no-repeat;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	height: 100vh;
-	background-position: center;
-	position: absolute;
-}
-
-
-
-nav{
-	background-color: #080808;
-}
-
-.navbar-brand{
-	font-size: 30px;
-}
-
-.navbar-brand:hover{
-	text-decoration: underline;
-}
-
-#arrow{
-	display: flex;
-	justify-content: center;
-	animation: MoveUpDown 2s linear infinite;
-  	
-  	left: 0;
-  	bottom: 0;
-}
-
-@keyframes MoveUpDown {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-#whole h1{
-	font-family: schnebel-sans-pro-expanded, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  text-align: center;
-  color: white;
-  padding: 15px;
-}
-
-#whole h3{
-	font-family: paralucent, sans-serif;
-  font-weight: 200;
-  font-style: normal;
-  letter-spacing: 2px;
-  color: white;
-  text-align: center;
-  padding-bottom: 10px;
-}
-
-/*
-
-
-
-#middle h1{
-  
-  padding-top: 85px;
-  padding-bottom: 60px;
-}
-
-#middle p{
-  
-}
-
-#words{
-	width: 65%;
-	
-}
-
-*/
 
 
 /* Split the screen in half */
 .split {
-  height: 100vh;
-  width: 100%;
-  position: absolute;
+ 
   display: flex;
-  flex-direction: column;
-  margin-top: 100vh;
+  flex-direction: row;
 }
 
 /* Control the left side */
 .left {
-  left: 0;
   background-color: white;
+  width: 50%;
 
 }
 
@@ -123,73 +36,22 @@ font-family: paralucent, sans-serif;
   text-align: left;
   font-size: 1em;
   padding-left: 5%;
-  padding-right: 55%;
-}
-
-/* Control the right side */
-.right {
+  padding-right: 5%;
   
-  height: 120vh;
-  width: 50vw;
-  overflow: hidden;
-  position: relative;
-  background-color: #000;
-  margin-left: 50%;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-
 }
 
-.right > div {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  position: absolute;
+#right{
+
+  width: 50%;
+  background-image: url(../img/LinkedIn-Blue.png);
   background-position: center;
-  animation: right 25s infinite;
-  opacity: 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  
 }
 
-.right > div:nth-child(2) {
-  animation-delay: 5s;
-}
-.right > div:nth-child(3) {
-  animation-delay: 10s;
-}
-.right > div:nth-child(4) {
-  animation-delay: 15s;
-}
-.right > div:nth-child(5) {
-  animation-delay: 20s;
-}
-.right > div:nth-child(6) {
-  animation-delay: 25s;
-}
-
-.right p{
-	font-family: paralucent, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  text-align: left;
-  font-size: 2em;
-  position: absolute;
-  color: white;
-}
-
-
-@keyframes right {
-  10% {
-    opacity: 1;
-  }
-  20% {
-    opacity: 1;
-  }
-  30% {
-    opacity: 0;
-  }
-  40% {
-    transform: scale(1.2);
-  }
-}
 
 
 /* If you want the content centered horizontally and vertically */
@@ -197,4 +59,45 @@ font-family: paralucent, sans-serif;
 
   t
   text-align: left;
+}
+
+@media (min-width: 1030px) and (max-width: 1060px){
+
+
+
+}
+
+@media (min-width: 710px) and (max-width: 1030px){
+
+.split{
+  flex-direction: column;
+}
+
+.left{
+  width: 100%;
+}
+
+#right{
+  width: 100%;
+  background-size: contain;
+  background-color: #4d6068;
+}
+
+}
+
+
+@media (max-width: 709px){
+
+.split{
+  flex-direction: column;
+}
+
+.left{
+  width: 100%;
+}
+
+#right{
+  width: 100%;
+}
+
 }
