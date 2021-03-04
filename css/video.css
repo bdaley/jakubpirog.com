@@ -454,6 +454,12 @@ iframe{
 	padding: 0;
 }
 
+h1{
+  font-size: 50px;
+}
+
+
+
 }
 
 @media print,
