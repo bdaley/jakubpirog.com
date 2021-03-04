@@ -2,7 +2,9 @@ html{
 	scroll-behavior: smooth;
 }
 
-
+.menu1{
+  background-color: black;
+}
 
 /* Split the screen in half */
 .split {
@@ -43,7 +45,7 @@ font-family: paralucent, sans-serif;
 #right{
 
   width: 50%;
-  background-image: url(../img/LinkedIn-Blue.png);
+  background-image: url(../img/LinkedIn-Blue-Circle.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -80,7 +82,7 @@ font-family: paralucent, sans-serif;
 #right{
   width: 100%;
   background-size: contain;
-  background-color: #4d6068;
+  
 }
 
 }
